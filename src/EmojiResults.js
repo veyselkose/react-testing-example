@@ -12,6 +12,7 @@ export default class EmojiResults extends PureComponent {
 
   componentDidMount() {
     this.clipboard = new Clipboard(".copy-to-clipboard");
+    // console.log(this.clipboard)
   }
 
   componentWillUnmount() {
@@ -19,6 +20,7 @@ export default class EmojiResults extends PureComponent {
   }
 
   render() {
+  
     return (
       <div className="component-emoji-results">
         {this.props.emojiData.map(emojiData => (
